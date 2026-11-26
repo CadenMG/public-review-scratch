@@ -10,7 +10,7 @@ import (
 )
 
 var checkoutRequests = promauto.NewCounterVec(prometheus.CounterOpts{
-	Name: "checkout_requests_total",
+	Name: "checkout_http_requests_total",
 	Help: "Checkout requests by status code.",
 }, []string{"code"})
 
